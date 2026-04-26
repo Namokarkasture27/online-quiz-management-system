@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - Quiz App</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Admin Dashboard</h2>
+    <p>Welcome, Admin!</p>
+
+    <br>
+
+    <a th:href="@{/admin/quiz/new}">
+        <button>Create New Quiz</button>
+    </a>
+    <br><br>
+
+    <a th:href="@{/admin/quizzes}">
+        <button>View All Quizzes</button>
+    </a>
+    <br><br>
+
+    <a th:href="@{/admin/logout}">Logout</a>
+</div>
+
+</body>
+</html>

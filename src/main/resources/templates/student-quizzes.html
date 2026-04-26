@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Available Quizzes</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<div class="table-container">
+    <h2>Welcome, <span th:text="${studentName}"></span></h2>
+    <h3>Available Quizzes</h3>
+
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Quiz Title</th>
+            <th>Description</th>
+            <th>Attempt</th>
+        </tr>
+
+        <tr th:each="quiz : ${quizzes}">
+            <td th:text="${quiz.id}"></td>
+            <td th:text="${quiz.title}"></td>
+            <td th:text="${quiz.description}"></td>
+            <td>
+                <a th:href="@{'/student/quiz/' + ${quiz.id}}">
+                    <button>Start Quiz</button>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <a th:href="@{/student/logout}">Logout</a>
+</div>
+
+</body>
+</html>

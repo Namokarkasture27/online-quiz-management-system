@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App Home</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Online Quiz Application</h1>
+    <h3>Select Your Role</h3>
+
+    <br>
+
+    <a th:href="@{/admin/login}">
+        <button>Admin Login</button>
+    </a>
+    <br><br>
+
+    <a th:href="@{/student/login}">
+        <button>Student Login</button>
+    </a>
+</div>
+
+</body>
+</html>

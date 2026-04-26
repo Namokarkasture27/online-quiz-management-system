@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Quiz - Admin</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Create New Quiz</h2>
+
+    <form th:action="@{/admin/quiz/save}" th:object="${quiz}" method="post">
+        <input type="text" th:field="*{title}" placeholder="Quiz Title" required>
+        <input type="text" th:field="*{description}" placeholder="Description (optional)">
+
+        <label>
+            <input type="checkbox" th:field="*{active}">
+            Active
+        </label>
+        <br><br>
+
+        <button type="submit">Save Quiz</button>
+    </form>
+
+    <br>
+    <a th:href="@{/admin/quizzes}">Back to Quizzes</a>
+</div>
+
+</body>
+</html>

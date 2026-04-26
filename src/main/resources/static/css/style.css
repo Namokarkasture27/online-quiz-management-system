@@ -1,0 +1,118 @@
+/* ================= GLOBAL THEME ================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background-attachment: fixed;
+    color: #333;
+}
+
+/* ================= GLASS CONTAINER ================= */
+
+.container, .table-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-align: center;
+}
+
+.table-container {
+    width: 80%;
+}
+
+/* ================= HEADINGS ================= */
+
+h1, h2, h3 {
+    font-weight: 600;
+    color: #fff;
+}
+
+/* ================= INPUTS ================= */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    width: 90%;
+    padding: 14px;
+    margin: 10px 0 20px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: rgba(255,255,255,0.8);
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+    background: linear-gradient(135deg, #ff6f61, #de1b7b);
+    border: none;
+    padding: 14px 25px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #de1b7b, #ff6f61);
+}
+
+/* ================= LINKS ================= */
+
+a {
+    color: #ffdfdf;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ================= TABLES ================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+}
+
+table th {
+    background: rgba(255,255,255,0.25);
+    padding: 14px;
+    font-size: 18px;
+}
+
+table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+tr:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* ================= RADIO BUTTONS ================= */
+
+input[type="radio"] {
+    accent-color: #ff6f61;
+    transform: scale(1.3);
+}

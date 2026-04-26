@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Questions - Admin</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<div class="table-container">
+    <h2>Questions for Quiz: <span th:text="${quiz.title}"></span></h2>
+
+    <h3>Existing Questions</h3>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Question</th>
+            <th>Correct Option</th>
+        </tr>
+        <tr th:each="q : ${questions}">
+            <td th:text="${q.id}"></td>
+            <td th:text="${q.questionText}"></td>
+            <td th:text="${q.correctOption}"></td>
+        </tr>
+    </table>
+</div>
+
+<div class="container">
+    <h3>Add New Question</h3>
+
+    <form th:action="@{'/admin/quiz/' + ${quiz.id} + '/questions/save'}"
+          th:object="${question}" method="post">
+
+        <textarea th:field="*{questionText}" rows="3" cols="40"
+                  placeholder="Enter question text" required></textarea><br><br>
+
+        <input type="text" th:field="*{optionA}" placeholder="Option A" required>
+        <input type="text" th:field="*{optionB}" placeholder="Option B" required>
+        <input type="text" th:field="*{optionC}" placeholder="Option C" required>
+        <input type="text" th:field="*{optionD}" placeholder="Option D" required>
+
+        <input type="text" th:field="*{correctOption}" placeholder="Correct Option (A/B/C/D)" maxlength="1" required>
+
+        <button type="submit">Save Question</button>
+    </form>
+
+    <br>
+    <a th:href="@{/admin/quizzes}">Back to Quizzes</a>
+</div>
+
+</body>
+</html>
