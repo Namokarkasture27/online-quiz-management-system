@@ -107,7 +107,7 @@ Display Result
 
 ---
 
-# 🗃 Database Entities
+#  Database Entities
 
 - Admin  
 - Student  
@@ -126,8 +126,12 @@ Quiz → Generates → Result
 
 ---
 
-# 📸 Screenshots
-(Add screenshots here later)
+#  Screenshots
+#  Project Screenshots
+
+| Admin Dashboard | Quiz Interface | Result Page |
+|----------------|---------------|-------------|
+| ![](screenshots/admin-dashboard.png) | ![](screenshots/quiz-interface.png) | ![](screenshots/result-page.png) |
 
 - Home Page  
 - Admin Dashboard  
@@ -136,7 +140,7 @@ Quiz → Generates → Result
 
 ---
 
-# 🔮 Future Enhancements
+#  Future Enhancements
 - Timer Based Quiz
 - Leaderboard
 - Negative Marking
@@ -146,7 +150,7 @@ Quiz → Generates → Result
 
 ---
 
-# 👨‍💻 Developed By
+#  Developed By
 **Namokar Kasture**
 
 Mini Project | Spring Boot + Java
