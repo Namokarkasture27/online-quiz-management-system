@@ -131,7 +131,7 @@ Quiz → Generates → Result
 
 | Admin Dashboard | Quiz Interface | Result Page |
 |----------------|---------------|-------------|
-| ![](screenshots/admin-dashboard.png) | ![](screenshots/quiz-interface.png) | ![](screenshots/result-page.png) |
+| ![](admin-dashboard.png.png) | ![](quiz-interface.png.png) | ![](result-page.png.png) |
 
 - Home Page  
 - Admin Dashboard  
