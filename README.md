@@ -150,7 +150,8 @@ Quiz → Generates → Result
 
 ---
 
-#  Developed By
-**Namokar Kasture**
+## Team Members
+- Namokar Kasture
+- Pavan Khajurkar
 
 Mini Project | Spring Boot + Java
